@@ -4,27 +4,24 @@ Open the terminal or Git Bash and navigate to your local repository.
 
 Checkout the branch that you want to set the head commit for. For example, to switch to the main branch, run the following command:
 
-css
-Copy code
+
+
 git checkout main
 Identify the commit hash of the commit you want to set as the head. You can view the commit history by running:
 
-bash
-Copy code
+
+
 git log
 This will show you a list of commits, each with a hash (a long alphanumeric string). Find the hash of the commit you want to set as the head.
 
 Set the head of the branch to the commit hash by running the following command:
 
-css
-Copy code
+
 git reset --hard COMMIT_HASH
 Replace COMMIT_HASH with the hash of the commit you want to set as the head.
 
 Force push the branch to GitHub by running:
 
-css
-Copy code
 git push --force
 This will overwrite the remote branch with your local branch, effectively setting the head to the commit you specified.
 
