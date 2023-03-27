@@ -6,3 +6,9 @@ git log
 git reset --hard COMMIT_HASH
 git push --force
 ```
+
+## To Remove Node_Modules after git commit -m "Commit Msg"
+```bash
+git rm -r --cached .
+
+```
